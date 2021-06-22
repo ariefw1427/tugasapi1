@@ -29,4 +29,10 @@ Route::delete('barang/{id}', 'API\ProductController@destroy');
 // tambah data
 Route::post('barang', 'API\ProductController@store');
 
+// kategori
+Route::get('/tugas','TugasController@index');
+Route::get('/tugas/{tugas}','TugasController@show');
+Route::delete('/tugas/{tugas}','TugasController@destroy');
+Route::post('/tugas/','TugasController@store');
+Route::patch('/tugas/{tugas}','TugasController@update');
 //});
